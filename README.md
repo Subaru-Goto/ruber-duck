@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project is a project to understand how each HTML element behaves and can be decolated by CSS.
+This is a project to understand how each HTML element behaves and can be decolated by CSS.
 
 ### Built with
 - Semantic HTML5 markup
