@@ -1,0 +1,205 @@
+/* Reset default margin and padding*/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Kanit', sans-serif;
+}
+
+/* layout */
+nav {
+  border: 2px solid green;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1em;
+}
+
+.nav__left {
+  border: 2px solid green;
+  display: flex;
+  align-items: center;
+}
+
+.nav__right {
+  border: 2px solid green;
+  width: 80%;
+}
+
+.nav__right > ul{
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  gap: 10px;
+}
+
+#home{
+  padding: 3em;
+  text-align: center;
+}
+
+#duck {
+  border: 2px solid yellow;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#emergency{
+  text-align: center;
+}
+.grid-container {
+  border: 2px solid blue;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.grid-item {
+  border: 2px solid pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9rem;
+
+}
+
+footer {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.contact__form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Typography */
+
+h1, 
+h2 {
+  color: #f08700;
+}
+
+ul {
+  border: 2px solid green;
+}
+
+li {
+  border: 2px solid green;
+  background-color: #f08700;
+  list-style-type: none;
+  padding: 1em;
+}
+
+nav a{
+  text-decoration:none;
+  color: #fff;
+}
+
+a:hover{
+  font-size: 20px;
+  text-shadow: 1px 1px 1px #000000;
+}
+a:active{
+  color: #000000;
+}
+
+header {
+  border: 2px solid orange;
+}
+
+.duck__text{
+  width: 50%;
+  text-align: center;
+}
+
+.duck__text p {
+  border: 2px solid yellow;
+}
+
+.duck__text h2{
+  text-transform: capitalize;
+  text-shadow: 0px 1px 1px yellow;
+}
+
+.duck__img {
+  border: 2px solid yellow;
+}
+
+.duck__img img {
+  width: 10rem;
+  height: 10rem;
+}
+
+#emergency {
+  border: 2px solid blue;
+}
+
+#emergency a{
+  text-decoration: none;
+  color: #000000;
+}
+
+#emergency a:hover{
+  text-decoration: none;
+  color: #f08700;
+}
+
+#emergency a:active{
+  border: 1px solid #000000;
+}
+
+.btn{
+  padding: .5em;
+  border-radius: 10px;
+  border: none;
+  background-color: #f08700;
+  color: #fff;
+}
+
+#contact:not(button){
+  background-color: grey;
+}
+
+#contact img{
+  width:2rem;
+  height: 2rem;
+}
+
+.contact__input,
+.contact__text-area{
+  border-radius: 10px;  
+}
+
+.contact__input:focus,
+.contact__text-area:focus{
+  background-color: lightblue; 
+}
+
+h1 {
+  /*animation-name - animation-duration - animation-delay animation-iteration-count */
+  animation: unblur 3s 1s 2;
+  }
+  
+  /*Keyframe definition
+  This custom keyframe rule named “unblur” will change the appearance of a text:
+  it will start with a text-shadow and will end with no text-shadow.
+  This is the custom animation that we will use inside the animation property */
+  @keyframes unblur {
+    from {
+      text-shadow: 0 0 8px #c0c0c0;
+  
+    }
+    to {
+      text-shadow: 0;
+    }
+  }
